@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const apiEndpoint = 'http://localhost:3001/api/products'; // Replace with your API endpoint
+    const apiEndpoint = 'http://ec2-18-208-198-41.compute-1.amazonaws.com:3002/api/products'; // Replace with your API endpoint
 
     // Function to fetch and display ordered products
     const fetchAndDisplayProducts = () => {
