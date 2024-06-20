@@ -28,6 +28,10 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no ec2-user@ec2-18-208-198-41.compute-1.amazonaws.com 'cd /home/ec2-user/stone-collection-project/stone-collection-project && git pull origin master'
 
-      - name: Restart PM2
+      - name: Update PM2 and Restart Process
         run: |
-          ssh -o StrictHostKeyChecking=no ec2-user@ec2-18-208-198-41.compute-1.amazonaws.com 'cd /home/ec2-user/stone-collection-project/stone-collection-project && pm2 restart http-server --name stone_collection -- -p 8082'
+          ssh -o StrictHostKeyChecking=no ec2-user@ec2-18-208-198-41.compute-1.amazonaws.com '
+            cd /home/ec2-user/stone-collection-project/stone-collection-project &&
+            pm2 update &&
+            pm2 restart stone_collection --update-env -- -p 8082
+          '
