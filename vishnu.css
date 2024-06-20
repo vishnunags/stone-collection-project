@@ -23,13 +23,12 @@ h1 {
 
 .product-item {
     width: 300px; /* Adjust width of product items as needed */
-    background-color: transparent; /* Make background transparent or match the body background color */
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    background-color: #f0f0f0; /* Match the background color of the page */
     margin: 10px;
-    padding: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 0; /* Remove padding */
     text-align: center; /* Center content within product card */
+    border: none; /* Remove border */
+    box-shadow: none; /* Remove box-shadow */
 }
 
 /* Image Styling */
