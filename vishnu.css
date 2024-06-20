@@ -24,11 +24,10 @@ h1 {
 .product-item {
     width: 300px; /* Adjust width of product items as needed */
     background-color: #f0f0f0; /* Match the background color of the page */
-    border: 1px solid #f0f0f0; /* Make border color match the background color */
-    border-radius: 5px;
-    margin: 10px;
-    padding: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border: none; /* Remove border */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    box-shadow: none; /* Remove box-shadow */
     text-align: center; /* Center content within product card */
 }
 
@@ -43,27 +42,4 @@ h1 {
 .bottom-center-container {
     display: flex;
     justify-content: center; /* Center the button horizontally */
-    align-items: center; /* Center the button vertically */
-    padding: 20px 0; /* Padding to ensure it's clearly at the bottom */
-}
-
-.new-product-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.new-product-btn:hover {
-    background-color: #0056b3;
-}
-
-.new-product-btn:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px #5bc0de; /* Example focus style, adjust as needed */
-}
+    align-items
