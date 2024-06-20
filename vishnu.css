@@ -4,6 +4,7 @@ body {
     flex-direction: column;
     min-height: 100vh; /* Ensure full viewport height */
     margin: 0;
+    background-color: #f0f0f0; /* Set the background color for the entire page */
 }
 
 h1 {
@@ -22,7 +23,7 @@ h1 {
 
 .product-item {
     width: 300px; /* Adjust width of product items as needed */
-    background-color: #f0f0f0;
+    background-color: transparent; /* Make background transparent or match the body background color */
     border: 1px solid #ccc;
     border-radius: 5px;
     margin: 10px;
